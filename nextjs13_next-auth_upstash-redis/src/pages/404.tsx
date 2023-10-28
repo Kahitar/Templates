@@ -13,7 +13,7 @@ const FourOhFour = () => {
                         404 | This page could not be found.
                     </h2>
                 </div>
-                <Link href='/dashboard'>Go back home</Link>
+                <Link href='/'>Go back home</Link>
             </div>
         </div>
     </>)

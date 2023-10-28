@@ -13,7 +13,7 @@ const Sidebar = async () => {
             <ul>
                 {session ? (
                     <li className="mb-4 justify-items-end">
-                        <Link href="/dashboard" className="text-white hover:text-gray-300">
+                        <Link href="/" className="text-white hover:text-gray-300">
                             Dashboard
                         </Link>
                     </li>

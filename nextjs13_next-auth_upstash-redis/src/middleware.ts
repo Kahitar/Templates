@@ -26,3 +26,8 @@ export default withAuth(
         },
     },
 )
+
+export const config = {
+    // For which routes will this middleware be invoked
+    matcher: ['/', '/login', '/:path*']
+}

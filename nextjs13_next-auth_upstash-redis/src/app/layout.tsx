@@ -22,7 +22,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.png" />
       </head>
-      <body>
+      <body suppressHydrationWarning={true}>
         <div className="flex">
           <Sidebar />
           <main className="flex-1">

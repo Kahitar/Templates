@@ -4,3 +4,7 @@ interface User {
     email: string
     image: string
 }
+
+interface UserData {
+    username: string
+}

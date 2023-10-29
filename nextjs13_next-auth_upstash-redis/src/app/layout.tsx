@@ -2,6 +2,7 @@ import ToastProvider from '@/components/ToastProvider'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Sidebar from '@/components/ui/sidebar'
+import { AuthProvider } from '@/components/NextAuthProvider'
 
 
 
@@ -23,12 +24,14 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.png" />
       </head>
       <body suppressHydrationWarning={true}>
+        <AuthProvider>
         <div className="flex">
           <Sidebar />
           <main className="flex-1">
             <ToastProvider>{children}</ToastProvider>
           </main>
         </div>
+        </AuthProvider>
       </body>
     </html>
   )

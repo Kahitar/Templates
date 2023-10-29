@@ -1,11 +1,11 @@
 import { getToken } from 'next-auth/jwt'
 import { withAuth } from 'next-auth/middleware'
-import { NextResponse } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
 
 const noAuthRequired = ['/', '/login']
 
 export default withAuth(
-    async function middleware(req) {
+    async function middleware(req: NextRequest) {
         const pathname = req.nextUrl.pathname
 
         // Manage route protection

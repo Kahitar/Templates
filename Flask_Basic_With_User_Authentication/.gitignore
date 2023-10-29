@@ -1,0 +1,8 @@
+*.pyc
+*.db
+env/*
+.vscode/*
+*.png
+*.jpg
+*.jpeg
+Backups/*
